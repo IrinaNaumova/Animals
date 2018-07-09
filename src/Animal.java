@@ -8,6 +8,9 @@ public abstract  class Animal {
     public int getAvailableRunDistance(){
         return availableRunDistance;
     }
+    public int getAvailableSwimDistance(){
+        return availableSwimDistance;
+    }
 
     public abstract void swim(int distance);
 
