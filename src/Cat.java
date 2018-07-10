@@ -6,7 +6,7 @@ public final class Cat extends Animal {
         Random random = new Random();
         this.availableRunDistance = 200 + ( -50 + random.nextInt(10)*10); // 200 +/- 50
         this.availableSwimDistance = 0;
-        this.availableJumpHeight = 2;
+        this.availableJumpHeight = 2 + ( -1 + random.nextInt(2)); // 2 +/- 1;
     }
 
     @Override
@@ -17,6 +17,11 @@ public final class Cat extends Animal {
     @Override
     public void run(int distance){
         super.run(distance, "Кошка");
+    }
+
+    @Override
+    public void jumpOver(double height){
+        super.jumpOver(height, "Кошка");
     }
 
 }
